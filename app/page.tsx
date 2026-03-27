@@ -209,7 +209,9 @@ export default function Home() {
                 </address>
                 <a
                   className="inline-flex items-center gap-2 font-label text-secondary font-bold hover:gap-4 transition-all duration-300"
-                  href="#"
+                  href="https://maps.app.goo.gl/cq1YbbG78fWuT2GG9"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   VIEW ON GOOGLE MAPS
                   <MaterialIcon icon="arrow_forward" />
