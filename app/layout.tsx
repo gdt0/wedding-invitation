@@ -23,16 +23,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className="font-body text-on-background selection:bg-secondary-fixed">
         {/* Version Selector */}
-        <div className="fixed top-4 right-4 z-[100] flex gap-2">
-          <Link href="/" className="px-4 py-2 bg-surface border border-outline-variant text-xs font-label uppercase tracking-wider hover:bg-secondary hover:text-on-secondary transition-colors">
-            V1
-          </Link>
-          <Link href="/v2" className="px-4 py-2 bg-surface border border-outline-variant text-xs font-label uppercase tracking-wider hover:bg-secondary hover:text-on-secondary transition-colors">
-            V2
-          </Link>
-          <Link href="/v3" className="px-4 py-2 bg-surface border border-outline-variant text-xs font-label uppercase tracking-wider hover:bg-secondary hover:text-on-secondary transition-colors">
-            V3
-          </Link>
+        <div className="fixed top-4 right-4 z-[100] flex gap-2 flex-wrap max-w-[calc(100vw-2rem)] justify-end">
+          <Link href="/" className="px-3 py-2 bg-surface border border-outline-variant text-xs font-label uppercase tracking-wider hover:bg-secondary hover:text-on-secondary transition-colors">V1</Link>
+          <Link href="/v2" className="px-3 py-2 bg-surface border border-outline-variant text-xs font-label uppercase tracking-wider hover:bg-secondary hover:text-on-secondary transition-colors">V2</Link>
+          <Link href="/v3" className="px-3 py-2 bg-surface border border-outline-variant text-xs font-label uppercase tracking-wider hover:bg-secondary hover:text-on-secondary transition-colors">V3</Link>
+          <Link href="/v4" className="px-3 py-2 bg-surface border border-outline-variant text-xs font-label uppercase tracking-wider hover:bg-secondary hover:text-on-secondary transition-colors">V4</Link>
+          <Link href="/v5" className="px-3 py-2 bg-surface border border-outline-variant text-xs font-label uppercase tracking-wider hover:bg-secondary hover:text-on-secondary transition-colors">V5</Link>
+          <Link href="/v6" className="px-3 py-2 bg-surface border border-outline-variant text-xs font-label uppercase tracking-wider hover:bg-secondary hover:text-on-secondary transition-colors">V6</Link>
         </div>
         {children}
       </body>
